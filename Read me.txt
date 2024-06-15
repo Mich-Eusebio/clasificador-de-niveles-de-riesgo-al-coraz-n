@@ -1,0 +1,21 @@
+READ ME!.
+
+El grupo Pysams de SANGSUNG INNOVATION CAMPUS, aula R11 está compuesto por:
+Michael Eusebio
+...
+
+Objetivo del Proyecto
+Este proyecto tiene como objetivo desarrollar un modelo de inteligencia artificial (IA) capaz de predecir el riesgo de una persona de sufrir un ataque al corazón. Para ello, se adopta un enfoque holístico que va más allá de los datos médicos tradicionales, incorporando también información sobre el estilo de vida del individuo.
+La herramienta se implementará a través de un formulario web intuitivo y fácil de usar, donde los usuarios podrán ingresar información relevante sobre su salud y estilo de vida. El modelo de IA procesará estos datos y proporcionará una evaluación personalizada del riesgo de sufrir un ataque al corazón.
+La información solicitada en el formulario estará diseñada para ser accesible y comprensible para el usuario, evitando tecnicismos médicos innecesarios. Se priorizarán preguntas sobre datos que el paciente conozca o pueda obtener fácilmente, como hábitos alimenticios, actividad física, historial familiar, entre otros.
+
+
+Objetivos específicos del proyecto:
+• Desarrollar un modelo de IA preciso: Crear un modelo capaz de predecir con alta precisión el riesgo de ataque al corazón de un individuo.
+• Incorporar datos holísticos: Utilizar no solo datos médicos, sino también información sobre el estilo de vida para enriquecer el modelo.
+• Implementar un formulario web accesible: Diseñar un formulario web intuitivo y fácil de usar para recopilar datos de los usuarios.
+• Priorizar datos accesibles al usuario: Solicitar información que el paciente conozca o pueda obtener fácilmente.
+• Explorar diversas técnicas: Evaluar diferentes algoritmos de aprendizaje automático para encontrar el modelo más efectivo.
+• Aplicar aprendizaje no supervisado: Investigar el uso de clustering para identificar grupos de riesgo de forma autónoma.
+• Comparar resultados: Contrastar los resultados del modelo supervisado con los obtenidos mediante el clustering.
+
