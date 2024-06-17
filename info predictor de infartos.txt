@@ -17,21 +17,19 @@ https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data
 
 ##parametros para determinar infartos:
 
-edad
-género
-hábitos de tabaquismo
-consumo de alcohol
-nivel de actividad física
+☑ Edad
+☑ Género
+☑ Hábitos de fumar
+☑ consumo de alcohol
+Consumo de drogas
+☑ nivel de actividad física
 dietas de azucar y grasa
-parametros c´linicos
-alta presión arterial
-tipos de colesterol 
-indice de masa corporal
+☑ Alta presión arterial
+☑ Colesterol 
+☑ indice de masa corporal mayor a 30
 • Antecedentes de enfermedades cardíacas, diabetes, hipertensión, etc.
-alta glucosa en sangre
+☑ Alta glucosa en sangre
 niveles de estres
-estudios de electrocardiograma
-frecuencia cardiaca
-Variabilidad de la Frecuencia Cardíaca (HRV)
-óxigeno en sangre
+☑ Estudios de electrocardiograma
+☑ Frecuencia cardiaca
 calidad del sueño
