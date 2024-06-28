@@ -1,0 +1,14 @@
+Estatus del proyecto
+
+Semana1. Creación del modelo de IA.
+Michael Eusebio, investigó la data de 70 000 pacientes desde kaggle. Este dataset fue seleccionado por abarcar la mayoría de las variables de investiación.
+Raileidys Simé, normalizó el dataset 
+Victor Sepúlveda, creó, entrenó y ajustó el modelo Random Forest.
+Yainiel Basques, realizó visualización de algunos árboles para ver como se estaban tomando las decisiones.
+
+Semana 2. Integración del modelo.
+Michael Eusebio, investigó una librería óptima que permitiera hacer la integración del modelo con los datos de futuros usuarios; esa librería es Streamlit.
+Michahel Eusebio, Construyó una parte del back-end, para conectar el modelo con la webapp de Streamlit
+Raileidys Simé, en primera instancia creo un formulario de gogle que se pensó usar como primera opción, pero Michael lo descartó, porque no se encontró la forma de hacerlo escalable. Sin embargo, el diseño del formulario fue el modelo a seguir para el front-end.
+Yainiel Basques, diseñó el Front-end, basado en el formulario creado por Raileidys Simé. 
+Raileidys Simé, 
