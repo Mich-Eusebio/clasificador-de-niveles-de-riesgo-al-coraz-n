@@ -1,1 +1,4 @@
 joblib
+sklearn==1.2.2
+pandas
+google-generativeai
