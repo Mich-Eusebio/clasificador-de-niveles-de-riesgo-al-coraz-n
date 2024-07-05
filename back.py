@@ -66,9 +66,9 @@ def get_blod_pressure(gender, age):
 def user_predict(data):
   prediccion = clf.predict(data)
   if prediccion[0] == 0:
-    return "¡Felicidades, usted No tiene riesgo de un ataque al corazón!"
+    return "¡Felicidades, usted No tiene riesgo de un ataque al corazón!💓"
   else:
-    return "¡Tiene riesgo de un ataque cardíaco, visite su médico!"
+    return "¡Usted tiene riesgo de un ataque cardíaco, visite su médico!💔"
 
 
 

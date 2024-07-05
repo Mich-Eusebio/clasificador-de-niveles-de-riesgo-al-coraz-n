@@ -117,8 +117,12 @@ Por favor, completa los siguientes campos con la información solicitada y así 
         "alco": alcohol_val,
         "active": ejercicio_val
         }
-    st.session_state["datos"] = datos
-    st.write(st.session_state["datos"])
+    if st.button("enviar"):
+        st.session_state["datos"] = datos
+        st.write("Datos enviados correctamente")
+        st.write("Expanda la barra lateral y haga clic en \"Predicción\" para que vea su resultado")
+        
+
 
 
 
@@ -127,14 +131,17 @@ Por favor, completa los siguientes campos con la información solicitada y así 
 def ver_prediccion():
     if "datos" in st.session_state:
         st.title("Resultados de la Predicción")
-        st.write("Aquí se mostrarán los resultados del modelo de predicción basados en los datos ingresados.")
+        st.write("Clarck dice que...🤞")
         
         datos = st.session_state.datos
         datos = list(datos.values())
         normalized_data = process_data(datos)
         resultado = back.user_predict(normalized_data)
         
-        #st.write("Resultado del modelo: ", resultado)
+        st.write("\n", resultado)
+
+        st.header("¡Atensión!")
+        st.write("Hasta ahora, 5/7/2024, Clarc cuenta con una presición de un 73.62%. No recomendamos tomar el resultado como verdad absoluta. Sin embargo, estamos trabajando en robustecer nuestro modelo. \n\n ¡GRACIAS POR PROBAR CLARC!")
     else:
         st.write("No se han enviado datos aún, por favor, completa el formulario.")
 
