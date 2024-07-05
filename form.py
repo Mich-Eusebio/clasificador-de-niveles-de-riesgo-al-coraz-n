@@ -26,6 +26,7 @@ def process_data(data_user):
 
 def user_predict(data):
     prediccion = modelo.predict(data)
+    print("hello world")
     if prediccion[0] == 0:
         return "¡Felicidades, usted No tiene riesgo de un ataque al corazón!👏💓"
     else:
@@ -134,7 +135,7 @@ def ver_prediccion():
         normalized_data = process_data(datos)
         resultado = back.user_predict(normalized_data)
         
-        #st.write("Resultado del modelo: ", resultado)
+        st.write("Resultado del modelo: ", resultado)
     else:
         st.write("No se han enviado datos aún, por favor, completa el formulario.")
 
