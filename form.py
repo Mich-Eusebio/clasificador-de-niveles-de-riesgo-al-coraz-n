@@ -119,7 +119,7 @@ Por favor, completa los siguientes campos con la información solicitada y así 
         "active": ejercicio_val
         }
     st.session_state["datos"] = datos
-    st.write(st.session_state["datos"])
+
 
 
 
