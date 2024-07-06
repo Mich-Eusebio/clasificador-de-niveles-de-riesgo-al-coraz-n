@@ -11,4 +11,11 @@ Michael Eusebio, investigó una librería óptima que permitiera hacer la integr
 Michahel Eusebio, Construyó una parte del back-end, para conectar el modelo con la webapp de Streamlit
 Raileidys Simé, en primera instancia creo un formulario de gogle que se pensó usar como primera opción, pero Michael lo descartó, porque no se encontró la forma de hacerlo escalable. Sin embargo, el diseño del formulario fue el modelo a seguir para el front-end.
 Yainiel Basques, diseñó el Front-end, basado en el formulario creado por Raileidys Simé. 
-Raileidys Simé, 
+Raileidys Simé, Contribuyó con la integración con el front
+Michael Eusebio, Resolvió y mejoró la integración del front y el back
+Axel soto,  creo una función para integrar la IA de google para sugerencias personalizadas
+Michael Eusebio, Integró dicha función también
+
+Axel Soto, contribuyó a la creación del pich de ventas
+Michael Eusebio, retocó dicho pich
+yainiel Básquez, diseñó las PPTs
