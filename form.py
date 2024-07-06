@@ -4,7 +4,37 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 import back #archivo con funciones de la lógica de esta app
 
-# traer el modelo
+#Esta es una función creada por Axel la cual hace que La IA de google genere sugerencias de salud de acuerdo a los datos del usuario
+# Michael retocó el prompt
+
+# Importar la librería de gemini, (inteligencia generativa de google)
+import google.generativeai as genai
+
+# obtener la clave api, (es gratuita).
+API_KEY = 'AIzaSyB9xdKYyGMjMgtf5-5-yTM76dcJvF9Bolc'
+
+# función para obtener su respuesta
+def consumir_api_prediccion(datos):
+    print("Datos enviados a la API:", datos)
+    #llamar a la api de gemini con prompt en español
+    
+    prompt = (f"Tomando en cuenta los datos ingresados {datos}, "
+              f"Dame 3 sugerencias para mejorar mi salud cardiovascular."
+              f"Nota la data está tratada, o sea que para el género 1 es mujer, 2 es hombre; el colesterol va del 1 al 3, y esto representa normal, sobre lo normal y extremadamente sobre lo normal; lo mismo del colesterol se aplica para la glucosa; y finalmente para las variables de fumar, alcohol y ejercicio, 0 significa no, y 1 representa sí")
+
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel('gemini-pro')
+
+    response = model.generate_content(prompt) 
+    
+    if response:
+        return response.text
+    elif response.status_code == 401:
+        return "Error: No sé pudieron geneerar las sugerencias de Gemini"
+
+
+
+# traer el modelo Randon Forest
 modelo = back.clf 
 
 # traer el dataframe reducido con solo edad, genero y tipos de presión
@@ -141,8 +171,15 @@ def ver_prediccion():
         
         st.write("\n", resultado)
 
+# implementar la función de Axel al front
+        st.header("Sugerencias de Gemini")
+        st.write(consumir_api_prediccion(st.session_state.datos))
+
+#poner una advertencia sobre nuestro modelo Clarc
         st.header("¡Atensión!")
         st.write("Hasta ahora, 5/7/2024, Clarc cuenta con una presición de un 73.62%. No recomendamos tomar el resultado como verdad absoluta. Sin embargo, estamos trabajando en robustecer nuestro modelo. \n\n ¡GRACIAS POR PROBAR CLARC!")
+
+# Mostrar mensaje si el usuario no llena el formulario
     else:
         st.write("No se han enviado datos aún, por favor, completa el formulario.")
 
