@@ -14,7 +14,7 @@ files.upload()
 # cargar el modelo
 import tensorflow as tf
 autoencoder = tf.keras.models.load_model("autoencoder.h5")
-print("cargado")
+
 
 ## crear una función de predicción
 def predecir(modelo, datos, umbral):
