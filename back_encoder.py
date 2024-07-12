@@ -7,9 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1ub191RJTuidI7e0IRXTHuhJflTVhNm_e
 """
 
-# cargar el modelo
- from google.colab import files
-files.upload()
+
+
 
 # cargar el modelo
 import tensorflow as tf
